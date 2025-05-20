@@ -1,19 +1,19 @@
-import Background_header from './components/Background_header';
-import Background_body from './components/Background_body';
-import Background_footer from './components/Background_footer'
-import Section from './components/Section';
+import BackgroundHeader from './components/BackgroundHeader';
+import NavBar from './components/NavBar';
+import BackgroundBody from './components/BackgroundBody';
+import Footer from './components/Footer'
 
 import AvatarOverlay from './components/AvatarOverlay';
 
 function App() {
   return (
     <div className="relative">
-      <Background_header />
+      <NavBar />
+      <BackgroundHeader />
       <AvatarOverlay />
-      <Background_body />
-      <Section />
-      <Background_body />
-      <Background_footer />
+      <BackgroundBody />
+      <Footer />
+
     </div>
   );
 }

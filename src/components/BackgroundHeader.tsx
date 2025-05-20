@@ -1,6 +1,7 @@
-const Background_header = () => {
+const BackgroundHeader = () => {
   return (
     <div
+      id="Inicio"
       className="w-full h-screen bg-no-repeat bg-center overflow-x-hidden"
       style={{
         backgroundImage: "url('/backgraund_header.webp')",
@@ -14,4 +15,4 @@ const Background_header = () => {
   );
 };
 
-export default Background_header;
+export default BackgroundHeader;

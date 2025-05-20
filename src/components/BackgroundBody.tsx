@@ -1,4 +1,4 @@
-const Background_body = () => {
+const BackgroundBody = () => {
     return (
       <div
         className="w-full h-screen bg-no-repeat bg-center bg-cover overflow-x-hidden"
@@ -10,5 +10,5 @@ const Background_body = () => {
     );
   };
   
-  export default Background_body;
+  export default BackgroundBody;
   
