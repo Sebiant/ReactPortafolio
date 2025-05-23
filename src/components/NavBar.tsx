@@ -10,15 +10,43 @@ const Navbar = () => {
         </a>
         <nav>
           <ul className="flex items-center gap-5 text-sm font-medium">
-            <li><a className="hover:text-cyan-500 transition-colors" href="#sobre-mi">Sobre mí</a></li>
-            <li><a className="hover:text-cyan-500 transition-colors" href="#proyectos">Proyectos</a></li>
-            <li><a className="hover:text-cyan-500 transition-colors" href="#skills">Skills</a></li>
-            <li><a className="hover:text-cyan-500 transition-colors" href="#Contacto">Contacto</a></li>
+            <li>
+              <a
+                className="hover:text-cyan-500 transition-colors"
+                href="#sobre-mi"
+              >
+                Sobre mí
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-cyan-500 transition-colors"
+                href="#proyectos"
+              >
+                Proyectos
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-cyan-500 transition-colors"
+                href="#skills"
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-cyan-500 transition-colors"
+                href="#Contacto"
+              >
+                Contacto
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

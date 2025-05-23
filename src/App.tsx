@@ -1,19 +1,15 @@
-import BackgroundHeader from './components/BackgroundHeader';
-import NavBar from './components/NavBar';
-import BackgroundBody from './components/BackgroundBody';
-import Footer from './components/Footer'
-
-import AvatarOverlay from './components/AvatarOverlay';
+import BackgroundHeader from "./components/BackgroundHeader";
+import BackgroundBody from "./components/BackgroundBody";
+import Footer from "./components/Footer";
+import AvatarOverlay from "./components/AvatarOverlay";
 
 function App() {
   return (
-    <div className="relative">
-      <NavBar />
+    <div className="relative min-h-screen">
       <BackgroundHeader />
       <AvatarOverlay />
       <BackgroundBody />
       <Footer />
-
     </div>
   );
 }

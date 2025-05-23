@@ -10,8 +10,7 @@ const BackgroundHeader = () => {
         backgroundRepeat: "no-repeat",
         backgroundColor: "#1c1f2b",
       }}
-    >
-    </div>
+    ></div>
   );
 };
 
