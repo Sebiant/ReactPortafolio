@@ -1,14 +1,14 @@
-import BackgroundHeader from "./components/BackgroundHeader";
-import BackgroundBody from "./components/BackgroundBody";
+import BackgroundHeroSection from "./components/BackgroundHeroSection";
 import Footer from "./components/Footer";
 import AvatarOverlay from "./components/AvatarOverlay";
+import SplitSections from "./components/SplitSections";
 
 function App() {
   return (
     <div className="relative min-h-screen">
-      <BackgroundHeader />
+      <BackgroundHeroSection />
       <AvatarOverlay />
-      <BackgroundBody />
+      <SplitSections />
       <Footer />
     </div>
   );

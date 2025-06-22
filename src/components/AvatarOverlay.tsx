@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 function AvatarOverlay() {
   return (
     <div
@@ -19,12 +17,9 @@ function AvatarOverlay() {
 
 function Avatar() {
   return (
-    <motion.img
+    <img
       src="/avatar.webp"
       alt="Avatar"
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
       className="w-full h-full object-contain"
     />
   );
@@ -33,15 +28,7 @@ function Avatar() {
 function Text() {
   return (
     <>
-      <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          ease: "easeOut",
-          delayChildren: 0.3,
-          staggerChildren: 0.2,
-        }}
+      <h1
         className="font-bold drop-shadow-lg text-right"
         style={{
           color: "#f5f7fa",
@@ -51,29 +38,14 @@ function Text() {
           lineHeight: 1.05,
         }}
       >
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          style={{ display: "block", marginBottom: "0.05em" }}
-        >
+        <span style={{ display: "block", marginBottom: "0.05em" }}>
           Hi, I'm
-        </motion.span>
+        </span>
 
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          style={{ display: "block", marginTop: "0.05em" }}
-        >
-          Sebastian
-        </motion.span>
-      </motion.h1>
+        <span style={{ display: "block", marginTop: "0.05em" }}>Sebastian</span>
+      </h1>
 
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
+      <p
         className="italic text-right"
         style={{
           color: "#aab3c5",
@@ -83,7 +55,7 @@ function Text() {
         }}
       >
         Web Developer
-      </motion.p>
+      </p>
     </>
   );
 }
